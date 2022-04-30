@@ -34,11 +34,11 @@ jobs:
     - name: Checkout from the repo
       uses: actions/checkout@v2.4.2
       
-    - name: clj-kondo checks  
-      uses: DeLaGuardo/clojure-lint-action@master
-      with:
-        clj-kondo-args: --lint src
-        github_token: ${{ secrets.THEHUB_TOKEN }}
+   # - name: clj-kondo checks  
+    #  uses: DeLaGuardo/clojure-lint-action@master
+    #  with:
+      #  clj-kondo-args: --lint src
+      #  github_token: ${{ secrets.THEHUB_TOKEN }}
 
 
 
