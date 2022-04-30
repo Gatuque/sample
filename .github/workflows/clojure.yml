@@ -24,3 +24,12 @@ jobs:
       run: lein uberjar
     - name: Status
       run: echo Compiled Successful
+    
+    - name: Build and Push Docker Image
+    - uses: HurricanKai/Publish-Docker-Github-Action@master
+      with:
+        name: gatu/github-xtn-repo
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        snapshot: true
+        tagging: true
