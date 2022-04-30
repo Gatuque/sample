@@ -2,7 +2,7 @@ FROM openjdk:8-jre-alpine
 
 EXPOSE 8080
 
-COPY target/uberjar/app-1.0-SNAPSHOT.jar /usr/app/
+COPY target/uberjar/github-axn-app-0.1.0-SNAPSHOT.jar /usr/app/
 WORKDIR /usr/app
 
-ENTRYPOINT ["java", "-jar", "app-1.0-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "github-axn-app-0.1.0-SNAPSHOT.jar"]
